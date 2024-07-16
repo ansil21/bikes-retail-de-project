@@ -1,0 +1,17 @@
+{
+	"name": "stored_procedure_create_all_views",
+	"properties": {
+		"content": {
+			"query": "USE gold_database\nGO\n\nCREATE OR ALTER PROC CreateServerlessView_gold @ViewName NVARCHAR(100)\nAS \nBEGIN\n\nDECLARE @statement VARCHAR(MAX)\n\n    SET @statement = N'CREATE OR ALTER VIEW' + @ViewName + 'AS\n        SELECT *\n        FROM\n            OPENROWSET(\n                BULK ''https://adlsgen2project21.dfs.core.windows.net/gold/bicycleshema/' + @ViewName + '/'',\n                FORMAT = ''DELTA''\n            ) AS [result]\n        '\n\nEXEC (@statement)\n\nEND \nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "gold_database",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

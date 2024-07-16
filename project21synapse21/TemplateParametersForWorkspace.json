@@ -8,14 +8,14 @@
 		"project21synapse21-WorkspaceDefaultSqlServer_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:project21synapse21.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
 		},
-		"project21synapse21-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://adlsgen2project21.dfs.core.windows.net"
-		},
 		"ServerlessSQLdb_properties_typeProperties_server": {
 			"value": "project21synapse21-ondemand.sql.azuresynapse.net"
 		},
 		"ServerlessSQLdb_properties_typeProperties_database": {
 			"value": "gold_database"
+		},
+		"project21synapse21-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://adlsgen2project21.dfs.core.windows.net"
 		}
 	}
 }

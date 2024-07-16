@@ -63,7 +63,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"storedProcedureName": "[dbo].[CreateServerlessView_gold]",
+								"storedProcedureName": "[dbo].[CreateSQLServerlessView_gold]",
 								"storedProcedureParameters": {
 									"ViewName": {
 										"value": {

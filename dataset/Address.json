@@ -1,0 +1,16 @@
+{
+	"name": "Address",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "onpremSqlServer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "`saleslt.address`"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

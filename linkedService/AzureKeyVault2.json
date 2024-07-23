@@ -1,11 +1,11 @@
 {
-	"name": "AzureKeyVault1",
+	"name": "AzureKeyVault2",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureKeyVault",
 		"typeProperties": {
-			"baseUrl": "https://keyvault21project.vault.azure.net/"
+			"baseUrl": "https://keyvault21project21.vault.azure.net/"
 		}
 	}
 }

@@ -39,7 +39,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Address",
+						"referenceName": "AllSqlDbTables",
 						"type": "DatasetReference"
 					}
 				],
